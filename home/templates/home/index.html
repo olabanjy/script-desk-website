@@ -1,0 +1,129 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} Homepage {% endblock title %}
+
+{% block content %}
+<section class="main">
+	<div class="main-content">
+        <!-- <span class="hello">Hello World!</span> -->
+		<h1 class="main-title">We design and develop secured<br>
+		persuasive Web and Mobile Applications </h1>
+		<div class="social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+      
+		</div>
+	</div>
+	<a class="down-arrow">
+		<div class="down-inner">
+			<img src="{% static 'img/icons/down-arrow.svg' %}" alt="">
+			<div class="line"></div>
+		</div>
+	</a>
+
+    <div id="particles-js"></div>
+</section>
+
+<!-- PORTFOLIO CONTENT 
+================================================== -->
+<section class="content bottom_90">
+    <div class="container">
+        
+        <div class="vf">
+            <div class="zigzag">
+                <svg viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+                    29.781,2.879 39.223,12.321 48.754,2.79  58.286,12.321"/>
+                </svg>
+            </div>
+            <p>View Filter</p>
+        </div>
+        
+        <div class="portfolio_filter">
+            <ul>
+                <li><a class="select-cat" data-filter="*" href="#">All Works</a></li>
+                <li><a data-filter=".web-design" href="#">Web Design</a></li>
+                <li><a data-filter=".branding" href="#">Branding</a></li>
+                <li><a data-filter=".photography" href="#">Photography</a></li>
+            </ul>   
+        </div>
+            
+        <div class="isotope_items row">
+            <!-- Item -->
+            <a href="#" class="single_item web-design col-md-6">
+                <figure>
+                <img src="{% static 'img/portfolio/01.jpg' %}" alt="">
+                     <figcaption>
+                                <ul>
+                                    <li> <span>web design</span> </li>
+                                    <li><h3 class="title">Natural Squares</h3></li>
+                                </ul>
+                    </figcaption>
+                </figure>
+            </a>
+            <!-- Item -->
+            <a href="#" class="single_item photography col-md-6">
+                <figure>
+                <img src="{% static 'img/portfolio/02.jpg' %}" alt="">
+                     <figcaption>
+                                <ul>
+                                    <li> <span>photography</span> </li>
+                                    <li><h3 class="title">Hipster Manuel</h3></li>
+                                </ul>
+                    </figcaption>
+                </figure>
+            </a>
+            <!-- Item -->
+            <a href="#" class="single_item web-design col-md-3">
+                <figure>
+                <img src="{% static 'img/portfolio/04.jpg' %}" alt="">
+                     <figcaption>
+                                <ul>
+                                    <li> <span>web design</span> </li>
+                                    <li><h3 class="title">Dark Places of Man</h3></li>
+                                </ul>
+                    </figcaption>
+                </figure>
+            </a>
+            <!-- Item -->
+            <a href="#" class="single_item branding col-md-3">
+                <figure>
+                <img src="{% static 'img/portfolio/05.jpg' %}" alt="">
+                     <figcaption>
+                                <ul>
+                                    <li> <span>branding</span> </li>
+                                    <li><h3 class="title">Chinese Girl</h3></li>
+                                </ul>
+                    </figcaption>
+                </figure>
+            </a>
+            <!-- Item -->
+            <a href="#" class="single_item branding col-md-6">
+                <figure>
+                <img src="{% static 'img/portfolio/03.jpg' %}" alt="">
+                     <figcaption>
+                                <ul>
+                                    <li> <span>branding</span> </li>
+                                    <li><h3 class="title">Retro Zielona Revelujca</h3></li>
+                                </ul>
+                    </figcaption>
+                </figure>
+            </a>
+            <!-- Item -->
+            <a href="#" class="single_item photography col-md-6">
+                <figure>
+                <img src="{% static 'img/portfolio/06.jpg' %}" alt="">
+                     <figcaption>
+                                <ul>
+                                    <li> <span>photography</span> </li>
+                                    <li><h3 class="title">Muse Metta Food</h3></li>
+                                </ul>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

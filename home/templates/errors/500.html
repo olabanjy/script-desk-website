@@ -1,0 +1,35 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} Internal Server Error {% endblock title %}
+
+{% block content %}
+
+<div class="container">
+    <div class="page-content about-page">
+        <div class="page-title top_90">
+            <h1 class="title">500 - Internal Server Error  </h1>
+            <div class="zigzag">
+                <svg viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+                    29.781,2.879 39.223,12.321 48.754,2.79  58.286,12.321"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    
+
+            <!-- About text -->
+            <div class="col-lg-8 offset-lg-2 text-center padding_30">
+                <p class="about-text">We are very sorry for inconvenience. <br> It looks like some how our server did not receive a timely response.</p>
+
+                <a href="/" id="con_submit" class="form-btn" >Go Back</a>
+
+            </div>
+
+   
+    
+</div>
+    
+</div>
+{% endblock content %}
