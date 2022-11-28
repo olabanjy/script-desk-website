@@ -3,7 +3,7 @@ from .base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["54.234.216.36", "scriptdeskng.com"]
+ALLOWED_HOSTS = ["54.234.216.36", "scriptdeskng.com", "www.scriptdeskng.com"]
 
 
 DATABASES = {
